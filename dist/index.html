@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1011">
+  <meta name="description" content="sp1ne — frontend и разработка с AI. Сайты, интерфейсы и внимание к деталям. Мои проекты и контакты.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="sp1ne — сайты с характером">
+  <meta property="og:description" content="Frontend, разработка с AI и внимание к деталям. Посмотрите мои работы и расскажите о своей идее.">
+  <meta property="og:url" content="https://sp1ne-portfolio.rosybowl32.chatgpt.site">
+  <meta property="og:image" content="https://sp1ne-portfolio.rosybowl32.chatgpt.site/assets/landscape.png">
+  <title>sp1ne — сайты с характером</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/landscape.png" fetchpriority="high">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work" data-i18n="skip">Перейти к проектам</a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="icon-telegram" viewBox="0 0 24 24"><path d="m21 3-4 18-6-5-4 3 1-7-6-2L21 3Z"/><path d="m8 12 8-5-5 9"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-4c0-1-.3-1.8-1-2 3-.4 6-1.5 6-6a5 5 0 0 0-1.4-3.5A5 5 0 0 0 18.5 3S17 2.5 14.8 4a13 13 0 0 0-5.6 0C7 2.5 5.5 3 5.5 3a5 5 0 0 0-.1 3.5A5 5 0 0 0 4 10c0 4.5 3 5.6 6 6-.7.2-1 1-1 2v4"/></symbol>
+    <symbol id="mark-spine" viewBox="0 0 36 36"><path d="m10 4 16 5-6 6L4 10Zm6 10 16 5-6 6-16-5Zm-6 10 16 5-6 6-16-5Z" fill="currentColor" stroke="none"/></symbol>
+  </svg>
+
+  <header class="header" id="header">
+    <a class="brand" href="#top" aria-label="sp1ne — главная" data-i18n-aria="home">
+      <svg class="brand__mark" aria-hidden="true"><use href="#mark-spine"/></svg><span>sp1ne</span>
+    </a>
+    <nav class="nav" id="navigation" aria-label="Основная навигация" data-i18n-aria="navLabel">
+      <a class="nav__link" href="#work" data-i18n="navWork">Проекты</a>
+      <a class="nav__link" href="#about" data-i18n="navAbout">Обо мне</a>
+      <a class="nav__link nav__contact" href="#contact"><span data-i18n="navContact">Обсудить проект</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+    </nav>
+    <div class="header__controls">
+      <div class="language" role="group" aria-label="Язык сайта" data-i18n-aria="languageLabel">
+        <button type="button" class="language__button" data-language="ru" aria-pressed="true" aria-label="Русский">RU</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language__button" data-language="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню" data-i18n-aria="openMenu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media"><img src="assets/landscape.png" width="1672" height="941" fetchpriority="high" alt="" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title" data-i18n-html="heroTitle">Собираю сайты.<br><em>Воплощаю идеи.</em></h1>
+        <div class="hero__bottom">
+          <p class="hero__description" data-i18n-html="heroDescription">Frontend и&nbsp;разработка с&nbsp;AI.<br>Сайты с&nbsp;вниманием к&nbsp;деталям.</p>
+          <div class="hero__action">
+            <a class="button button--light" href="#work"><span data-i18n="heroCta">Посмотреть проекты</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <span class="reassurance" data-i18n="heroNote">Работы можно открыть и посмотреть</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-space" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <h2 id="work-title" data-i18n="workTitle">Мои проекты</h2>
+        <p data-i18n-html="workIntro">Разные проекты и настроения.<br>От макета до работающего сайта.</p>
+      </div>
+
+      <article class="project project--future reveal" aria-labelledby="future-title">
+        <a class="project-preview" href="https://sp1ne8.github.io/future-tech/" target="_blank" rel="noopener noreferrer" aria-label="Открыть демо Future Tech в новой вкладке" data-i18n-aria="futurePreview">
+          <img class="project-preview__image" src="assets/future-tech.jpg" width="1264" height="1700" loading="lazy" alt="Главная страница Future Tech: тёмная тема и жёлтые акценты" data-i18n-alt="futureAlt">
+          <span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
+        </a>
+        <div class="project__info">
+          <div class="project__eyebrow"><span>01 / 02</span><span data-i18n="practice">Учебный проект</span></div>
+          <h3 id="future-title">Future Tech</h3>
+          <p class="project__description" data-i18n-html="futureDescription">Сайт про современные технологии.<br>Новости, статьи и раздел подкастов.<br>Тёмная тема и редакционная сетка.</p>
+          <ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
+          <p class="project__role" data-i18n="projectRole">Моя работа — вёрстка по макету Figma, с опорой на видеоуроки.</p>
+          <div class="project__links">
+            <a class="text-link" href="https://sp1ne8.github.io/future-tech/" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Открыть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <a class="text-link text-link--muted" href="https://github.com/sp1ne8/future-tech" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project--area reveal" aria-labelledby="area-title">
+        <a class="project-preview" href="https://sp1ne8.github.io/Area/" target="_blank" rel="noopener noreferrer" aria-label="Открыть демо Area в новой вкладке" data-i18n-aria="areaPreview">
+          <img class="project-preview__image" src="assets/area.jpg" width="1264" height="2000" loading="lazy" alt="Главная страница Area: крупная типографика и светлый интерфейс" data-i18n-alt="areaAlt">
+          <span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
+        </a>
+        <div class="project__info">
+          <div class="project__eyebrow"><span>02 / 02</span><span data-i18n="practice">Учебный проект</span></div>
+          <h3 id="area-title">Area</h3>
+          <p class="project__description" data-i18n-html="areaDescription">Лендинг для сервиса аналитики.<br>Крупный шрифт и свободная сетка.<br>Внятный рассказ о самом продукте.</p>
+          <ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
+          <p class="project__role" data-i18n="projectRole">Моя работа — вёрстка по макету Figma, с опорой на видеоуроки.</p>
+          <div class="project__links">
+            <a class="text-link" href="https://sp1ne8.github.io/Area/" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Открыть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <a class="text-link text-link--muted" href="https://github.com/sp1ne8/Area" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <div class="work__footnote reveal"><span data-i18n="workFootnote">От первого макета к собственному подходу.</span><a class="text-link" href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepos">Все репозитории</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__photo"><img src="assets/forest.png" width="1086" height="1448" loading="lazy" alt="Тёмный хвойный лес, уходящий в горный туман" data-i18n-alt="forestAlt"></div>
+      <div class="about__content reveal">
+        <h2 id="about-title" data-i18n-html="aboutTitle">За интерфейсом<br><em>стоит человек.</em></h2>
+        <p class="about__lead" data-i18n="aboutLead">Я — sp1ne. Мне интересно, как из идеи, нескольких строк и точных деталей получается цельный сайт.</p>
+        <p data-i18n-html="aboutBody">Начинал с макетов в Figma.<br>Учился по видео на YouTube.<br>Сейчас собираю сайты с AI,<br>изучаю код и исправляю баги.</p>
+        <p class="about__aside" data-i18n-html="aboutAside">Также изучал backend. Сейчас мой главный фокус — frontend.</p>
+        <dl class="skills">
+          <div><dt>Frontend</dt><dd>HTML / CSS / SCSS / JavaScript</dd></div>
+          <div><dt data-i18n="skillsTools">Инструменты</dt><dd>Figma / Git / GitHub</dd></div>
+          <div><dt data-i18n="skillsApproach">Подход</dt><dd data-i18n="skillsApproachValue">AI + ручная доработка</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="approach section-space" aria-labelledby="approach-title">
+      <div class="section-heading reveal">
+        <h2 id="approach-title" data-i18n="approachTitle">От идеи до сайта</h2>
+        <p data-i18n-html="approachIntro">Сначала — задача и первая версия.<br>Затем — проверка и точные детали.</p>
+      </div>
+      <ol class="process">
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">01</span><h3 data-i18n="stepOneTitle">Понять задачу</h3><p data-i18n-html="stepOneBody">Разберём вашу идею и задачу.<br>Поймём, кто придёт на сайт.<br>Решим, что важно показать.</p></li>
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">02</span><h3 data-i18n="stepTwoTitle">Собрать основу</h3><p data-i18n-html="stepTwoBody">Наметим структуру и стиль.<br>Соберу первую версию с AI.<br>Обсудим, что стоит улучшить.</p></li>
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">03</span><h3 data-i18n="stepThreeTitle">Довести детали</h3><p data-i18n-html="stepThreeBody">Проверим сайт на телефоне.<br>Проверим на большом экране.<br>Доведём оставшиеся детали.</p></li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__heading reveal"><h2 id="contact-title" data-i18n-html="contactTitle">Обсудим идею.<br><em>Соберём сайт.</em></h2></div>
+      <div class="contact__body reveal">
+        <p data-i18n="contactBody">Расскажите, что хотите сделать. Можно начать с пары предложений или ссылки на понравившийся сайт.</p>
+        <a class="button button--dark" href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="contactCta">Обсудить в Telegram</span><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a>
+        <span class="reassurance" data-i18n="contactNote">Начнём с обсуждения вашей идеи</span>
+        <a class="contact__email text-link" href="mailto:aleksejdrachuk10@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg><span>aleksejdrachuk10@gmail.com</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top"><a class="brand" href="#top" aria-label="sp1ne — наверх" data-i18n-aria="backToTop"><svg class="brand__mark" aria-hidden="true"><use href="#mark-spine"/></svg><span>sp1ne</span></a><span class="footer__line" data-i18n="footerLine">Frontend. AI. Внимание к деталям.</span><div class="socials"><a href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a><a href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a href="mailto:aleksejdrachuk10@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></a></div></div>
+    <div class="footer__bottom"><span>© <span id="year">2026</span> sp1ne</span><a class="text-link" href="#top"><span data-i18n="toTop">К началу</span><svg class="icon icon--up" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+  </footer>
+</body>
+</html>

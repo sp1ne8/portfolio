@@ -1,0 +1,90 @@
+[
+  {
+    "ctaBottom": 560,
+    "heroHeight": 568,
+    "language": "ru",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "ctaBottom": 560,
+    "heroHeight": 568,
+    "language": "en",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "ctaBottom": 836,
+    "heroHeight": 844,
+    "language": "ru",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "ctaBottom": 836,
+    "heroHeight": 844,
+    "language": "en",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "ctaBottom": 984,
+    "heroHeight": 1024,
+    "language": "ru",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "ctaBottom": 987.592529296875,
+    "heroHeight": 1024,
+    "language": "en",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      768,
+      1024
+    ]
+  },
+  {
+    "ctaBottom": 836.296875,
+    "heroHeight": 900,
+    "language": "ru",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "ctaBottom": 836.0111694335938,
+    "heroHeight": 900,
+    "language": "en",
+    "overflow": false,
+    "shortLines": [],
+    "viewport": [
+      1440,
+      900
+    ]
+  }
+]
