@@ -82,14 +82,26 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(min-width: 601px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 
-if ('IntersectionObserver' in window) {
-  document.documentElement.classList.add('motion-ready');
+function revealOnce(selector, rootClass, preference) {
+  if (!('IntersectionObserver' in window) || !preference.matches) return;
+  const elements = document.querySelectorAll(selector);
+  document.documentElement.classList.add(rootClass);
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
     });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+  }, { threshold: 0.08, rootMargin: '0px 0px 80px 0px' });
+  elements.forEach(element => observer.observe(element));
+  // A resize or preference change must never leave previously hidden text stranded.
+  preference.addEventListener('change', () => {
+    observer.disconnect();
+    elements.forEach(element => element.classList.add('is-visible'));
+    document.documentElement.classList.remove(rootClass);
+  }, { once: true });
 }
+
+// Text stays immediately visible on touch layouts. Previews only fade on mobile.
+revealOnce('.reveal', 'motion-ready', window.matchMedia('(min-width: 801px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)'));
+revealOnce('.project-preview', 'preview-motion', window.matchMedia('(prefers-reduced-motion: no-preference)'));
 
 document.getElementById('year').textContent = new Date().getFullYear();

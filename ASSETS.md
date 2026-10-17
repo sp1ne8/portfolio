@@ -9,7 +9,7 @@ Telegram, GitHub, mail and arrow symbols are inline SVG paths in `dist/index.htm
 ## Project images
 
 - `dist/assets/future-tech.jpg`: screenshot of https://sp1ne8.github.io/future-tech/, captured 2026-10-15; cropped to the first 1700 px.
-- `dist/assets/area.jpg`: screenshot of https://sp1ne8.github.io/Area/, captured 2026-10-15; cropped to the first 2000 px.
+- `dist/assets/area-preview.jpg`: screenshot of https://sp1ne8.github.io/Area/, recaptured 2026-10-17 at 1920 px viewport width after entrance animations settled; first 1905 × 1760 px, excluding the scrollbar. Replaces the old capture with an expanded menu and partially hidden content.
 
 These are screenshots of the supplied projects, not fabricated mockups. Content and figures inside the screenshots belong to the demonstration sites and are not claims about sp1ne's clients or results.
 
