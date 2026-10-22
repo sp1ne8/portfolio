@@ -19,7 +19,7 @@ Colors: #0f1011, #f5f5f7, #847dff. Opacity provides secondary text and surface t
 Easing: cubic-bezier(.22,1,.36,1).
 Radii: 0 / 999px; project previews use 12px at the user’s explicit request on 2026-10-17.
 Spacing: 4,8,12,16,24,32,48,64,96,128px.
-Motion revision, 2026-10-17: no automatic screenshot travel or entrance blur. Logo hover uses a 460ms transform transition on a small composited layer. Project previews reveal once with opacity 0.75 → 1 (500ms) and a 12px rise on desktop (700ms); mobile only changes opacity. Text entrances remain desktop-only. Native scrolling is not intercepted. Reduced-motion skips these effects. MOT-02 and MOT-04 are overridden by the user’s smoothness request; the 0/999 radius restriction is overridden for project previews.
+Motion revision, 2026-10-22: no automatic screenshot travel or entrance blur. The logo has a stationary 44px hit area; its complete inner group moves 2px over 420ms on hover/focus. Each project reveals once on scroll with a compositor-only cover wipe (850ms), followed by its text (170ms delay); desktop images settle from scale 1.035 over 1100ms, while mobile images remain static. Native scrolling is not intercepted. Reduced-motion skips these effects. The project reveal is the page’s signature interaction. MOT-02 is overridden by the user’s smoothness request; the 0/999 radius restriction is overridden for project previews.
 
 ## Sources
 - https://images.refero.design/styles/refero.design/video/0dd7172c-7a13-4948-ae4a-cf37640b6442.mp4

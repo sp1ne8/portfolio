@@ -82,7 +82,7 @@ document.addEventListener('click', event => {
 });
 window.matchMedia('(min-width: 601px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
 
-function revealOnce(selector, rootClass, preference) {
+function revealOnce(selector, rootClass, preference, options = {}) {
   if (!('IntersectionObserver' in window) || !preference.matches) return;
   const elements = document.querySelectorAll(selector);
   document.documentElement.classList.add(rootClass);
@@ -90,7 +90,7 @@ function revealOnce(selector, rootClass, preference) {
     entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px 80px 0px' });
+  }, { threshold: options.threshold ?? 0.08, rootMargin: options.rootMargin ?? '0px 0px 80px 0px' });
   elements.forEach(element => observer.observe(element));
   // A resize or preference change must never leave previously hidden text stranded.
   preference.addEventListener('change', () => {
@@ -100,8 +100,8 @@ function revealOnce(selector, rootClass, preference) {
   }, { once: true });
 }
 
-// Text stays immediately visible on touch layouts. Previews only fade on mobile.
+// Text stays immediately visible on touch layouts. Project reveals use compositor-only motion.
 revealOnce('.reveal', 'motion-ready', window.matchMedia('(min-width: 801px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)'));
-revealOnce('.project-preview', 'preview-motion', window.matchMedia('(prefers-reduced-motion: no-preference)'));
+revealOnce('.project', 'projects-motion', window.matchMedia('(prefers-reduced-motion: no-preference)'), { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
 document.getElementById('year').textContent = new Date().getFullYear();
