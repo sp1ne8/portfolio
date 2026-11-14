@@ -57,10 +57,8 @@
 
 .project__description{font-size:15px}.process__row p{font-size:15px}
 
-.attention-preview{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,40px);padding:clamp(20px,4vw,48px);background:#252733}
-.attention-preview__screen{height:100%;width:auto;max-width:46%;object-fit:contain;border-radius:12px}
 .project-preview--garage{background:#fff;height:auto;aspect-ratio:1425/891}.project-preview--garage .project-preview__image{object-fit:contain;object-position:center}
-.project-preview--coffee{background:#100904;height:auto;aspect-ratio:1425/891}.project-preview--coffee .project-preview__image{object-fit:contain;object-position:center}
+.project-preview--coffee,.project-preview--attention{background:#100904;height:auto;aspect-ratio:1375/739}.project-preview--attention{background:#000}.project-preview--coffee .project-preview__image,.project-preview--attention .project-preview__image{display:block;object-fit:cover;object-position:center}
 
 @media(max-width:360px){.hero__title{font-size:34px}.contact h2{font-size:36px}}
 
