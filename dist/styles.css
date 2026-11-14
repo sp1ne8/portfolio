@@ -63,3 +63,5 @@
 .project-preview--coffee{background:#100904;height:auto;aspect-ratio:1425/891}.project-preview--coffee .project-preview__image{object-fit:contain;object-position:center}
 
 @media(max-width:360px){.hero__title{font-size:34px}.contact h2{font-size:36px}}
+
+.project-preview--hydra{background:#080a09;aspect-ratio:1425/891;height:auto;display:flex;align-items:center;justify-content:center}.project-preview--hydra .project-preview__image{width:55%;height:65%;object-fit:contain}

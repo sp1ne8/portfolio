@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 455">
+  <rect width="650" height="455" fill="#36241b"/>
+  <defs>
+    <pattern id="streets" width="144" height="122" patternUnits="userSpaceOnUse" patternTransform="rotate(17)">
+      <path d="M0 0H144V122H0ZM0 48h144M38 0v48m0 24v50M99 0v122M0 72h99m0 24h45" fill="none" stroke="#996b4c" stroke-width="1" opacity=".45"/>
+      <path d="M5 5h28v38H5zm39 0h50v38H44zm60 0h35v38h-35zM5 77h28v40H5zm39 0h50v40H44zm60 25h35v15h-35z" fill="none" stroke="#a77c5b" opacity=".23"/>
+    </pattern>
+    <radialGradient id="shade"><stop stop-color="#271912" stop-opacity=".97"/><stop offset=".54" stop-color="#302017" stop-opacity=".45"/><stop offset="1" stop-color="#281b14" stop-opacity=".1"/></radialGradient>
+  </defs>
+  <rect width="650" height="455" fill="url(#streets)"/>
+  <path d="M-35 343 83 299 175 272 252 254 313 216 407 153 517 130 684 92" stroke="#6e5139" stroke-width="24" opacity=".5" fill="none"/>
+  <path d="M-35 343 83 299 175 272 252 254 313 216 407 153 517 130 684 92" stroke="#b18159" stroke-width="1" opacity=".6" fill="none" stroke-dasharray="4 5"/>
+  <path d="M63-10 175 106l50 77 53 113 104 169M506-14l-41 111 16 123 47 106 88 132" stroke="#a77752" stroke-width="4" opacity=".43" fill="none"/>
+  <rect width="650" height="455" fill="url(#shade)"/>
+</svg>
