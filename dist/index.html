@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0f1011">
-  <meta name="description" content="sp1ne — frontend и разработка с AI. Сайты, интерфейсы и внимание к деталям. Мои проекты и контакты.">
+  <meta name="description" content="sp1ne — frontend and AI-assisted development. Websites, interfaces and attention to detail. Selected work and contact.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="sp1ne — сайты с характером">
-  <meta property="og:description" content="Frontend, разработка с AI и внимание к деталям. Посмотрите мои работы и расскажите о своей идее.">
+  <meta property="og:title" content="sp1ne — websites with character">
+  <meta property="og:description" content="sp1ne — frontend and AI-assisted development. Websites, interfaces and attention to detail. Selected work and contact.">
   <meta property="og:url" content="https://sp1ne-portfolio.rosybowl32.chatgpt.site">
   <meta property="og:image" content="https://sp1ne-portfolio.rosybowl32.chatgpt.site/assets/landscape.png">
-  <title>sp1ne — сайты с характером</title>
+  <title>sp1ne — websites with character</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="styles.css">
@@ -18,7 +18,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#work" data-i18n="skip">Перейти к проектам</a>
+  <a class="skip-link" href="#work" data-i18n="skip">Skip to selected work</a>
   <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="icon-external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
@@ -29,21 +29,21 @@
   </svg>
 
   <header class="header" id="header">
-    <a class="brand" href="#top" aria-label="sp1ne — главная" data-i18n-aria="home">
+    <a class="brand" href="#top" aria-label="sp1ne — home" data-i18n-aria="home">
       <span class="brand__inner"><svg class="brand__mark" aria-hidden="true"><use href="#mark-spine"/></svg><span>sp1ne</span></span>
     </a>
-    <nav class="nav" id="navigation" aria-label="Основная навигация" data-i18n-aria="navLabel">
-      <a class="nav__link" href="#work" data-i18n="navWork">Проекты</a>
-      <a class="nav__link" href="#about" data-i18n="navAbout">Обо мне</a>
-      <a class="nav__link nav__contact" href="#contact"><span data-i18n="navContact">Обсудить проект</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+    <nav class="nav" id="navigation" aria-label="Main navigation" data-i18n-aria="navLabel">
+      <a class="nav__link" href="#work" data-i18n="navWork">Selected work</a>
+      <a class="nav__link" href="#about" data-i18n="navAbout">About me</a>
+      <a class="nav__link nav__contact" href="#contact"><span data-i18n="navContact">Let’s talk</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
     </nav>
     <div class="header__controls">
-      <div class="language" role="group" aria-label="Язык сайта" data-i18n-aria="languageLabel">
-        <button type="button" class="language__button" data-language="ru" aria-pressed="true" aria-label="Русский">RU</button>
+      <div class="language" role="group" aria-label="Website language" data-i18n-aria="languageLabel">
+        <button type="button" class="language__button" data-language="ru" aria-pressed="false" aria-label="Русский">RU</button>
         <span aria-hidden="true">/</span>
-        <button type="button" class="language__button" data-language="en" aria-pressed="false" aria-label="English">EN</button>
+        <button type="button" class="language__button" data-language="en" aria-pressed="true" aria-label="English">EN</button>
       </div>
-      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню" data-i18n-aria="openMenu"><span></span><span></span></button>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Open menu" data-i18n-aria="openMenu"><span></span><span></span></button>
     </div>
   </header>
 
@@ -51,12 +51,12 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero__media"><img src="assets/landscape.png" width="1672" height="941" fetchpriority="high" alt="" aria-hidden="true"></div>
       <div class="hero__content">
-        <h1 class="hero__title" id="hero-title" data-i18n-html="heroTitle">Собираю сайты.<br><em>Воплощаю идеи.</em></h1>
+        <h1 class="hero__title" id="hero-title" data-i18n-html="heroTitle">Ideas into form.<br><em>Built for the web.</em></h1>
         <div class="hero__bottom">
-          <p class="hero__description" data-i18n-html="heroDescription">Frontend и&nbsp;разработка с&nbsp;AI.<br>Сайты с&nbsp;вниманием к&nbsp;деталям.</p>
+          <p class="hero__description" data-i18n-html="heroDescription">Frontend, thoughtful details and&nbsp;AI.<br>Turning ideas into living interfaces.</p>
           <div class="hero__action">
-            <a class="button button--light" href="#work"><span data-i18n="heroCta">Посмотреть проекты</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
-            <span class="reassurance" data-i18n="heroNote">Работы можно открыть и посмотреть</span>
+            <a class="button button--light" href="#work"><span data-i18n="heroCta">Explore my work</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+            <span class="reassurance" data-i18n="heroNote">Real projects you can explore</span>
           </div>
         </div>
       </div>
@@ -64,72 +64,72 @@
 
     <section class="work section-space" id="work" aria-labelledby="work-title">
       <div class="section-heading reveal">
-        <h2 id="work-title" data-i18n="workTitle">Мои проекты</h2>
-        <p data-i18n-html="workIntro">Разные проекты и настроения.<br>От макета до работающего сайта.</p>
+        <h2 id="work-title" data-i18n="workTitle">Selected work</h2>
+        <p data-i18n-html="workIntro">Different projects and moods.<br>From designs to working websites.</p>
       </div>
 
       <article class="project project--future" aria-labelledby="future-title">
-        <a class="project-preview" href="demos/future-tech/index.html" target="_blank" rel="noopener noreferrer" aria-label="Открыть демо Future Tech в новой вкладке" data-i18n-aria="futurePreview">
-          <img class="project-preview__image" src="assets/future-tech.jpg" width="1264" height="1700" loading="lazy" decoding="async" alt="Главная страница Future Tech: тёмная тема и жёлтые акценты" data-i18n-alt="futureAlt">
-          <span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
+        <a class="project-preview" href="demos/future-tech/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Future Tech demo in a new tab" data-i18n-aria="futurePreview">
+          <img class="project-preview__image" src="assets/future-tech.jpg" width="1264" height="1700" loading="lazy" decoding="async" alt="Future Tech homepage with a dark theme and yellow accents" data-i18n-alt="futureAlt">
+          <span class="preview-hint"><span data-i18n="previewHint">Explore website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
         </a>
         <div class="project__info">
-          <div class="project__eyebrow"><span>01 / 05</span><span data-i18n="practice">Учебный проект</span></div>
+          <div class="project__eyebrow"><span>01 / 05</span><span data-i18n="practice">Practice project</span></div>
           <h3 id="future-title">Future Tech</h3>
-          <p class="project__description" data-i18n-html="futureDescription">Сайт про современные технологии.<br>Новости, статьи и раздел подкастов.<br>Тёмная тема и редакционная сетка.</p>
-          <ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
-          <p class="project__role" data-i18n="projectRole">Моя работа — вёрстка по макету Figma, с опорой на видеоуроки.</p>
+          <p class="project__description" data-i18n-html="futureDescription">A multi-page technology website.<br>News, articles and podcast layouts.<br>A dark, editorial visual language.</p>
+          <ul class="tech-list" aria-label="Technologies" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
+          <p class="project__role" data-i18n="projectRole">My contribution: implementing a Figma design, guided by video tutorials.</p>
           <div class="project__links">
-            <a class="text-link" href="demos/future-tech/index.html" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Открыть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <a class="text-link" href="demos/future-tech/index.html" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Visit website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
           </div>
         </div>
       </article>
 
       <article class="project project--area" aria-labelledby="area-title">
-        <a class="project-preview" href="demos/area/index.html" target="_blank" rel="noopener noreferrer" aria-label="Открыть демо Area в новой вкладке" data-i18n-aria="areaPreview">
-          <img class="project-preview__image" src="assets/area-preview.jpg" width="1905" height="1760" loading="lazy" decoding="async" alt="Главная страница Area: крупная типографика и светлый интерфейс" data-i18n-alt="areaAlt">
-          <span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
+        <a class="project-preview" href="demos/area/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open the Area demo in a new tab" data-i18n-aria="areaPreview">
+          <img class="project-preview__image" src="assets/area-preview.jpg" width="1905" height="1760" loading="lazy" decoding="async" alt="Area homepage with large typography and a light interface" data-i18n-alt="areaAlt">
+          <span class="preview-hint"><span data-i18n="previewHint">Explore website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span>
         </a>
         <div class="project__info">
-          <div class="project__eyebrow"><span>02 / 05</span><span data-i18n="practice">Учебный проект</span></div>
+          <div class="project__eyebrow"><span>02 / 05</span><span data-i18n="practice">Practice project</span></div>
           <h3 id="area-title">Area</h3>
-          <p class="project__description" data-i18n-html="areaDescription">Лендинг для сервиса аналитики.<br>Крупный шрифт и свободная сетка.<br>Внятный рассказ о самом продукте.</p>
-          <ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
-          <p class="project__role" data-i18n="projectRole">Моя работа — вёрстка по макету Figma, с опорой на видеоуроки.</p>
+          <p class="project__description" data-i18n-html="areaDescription">An analytics product landing page.<br>Expressive type and open layouts.<br>A clear, step-by-step product story.</p>
+          <ul class="tech-list" aria-label="Technologies" data-i18n-aria="technologies"><li>HTML</li><li>SCSS</li><li>JavaScript</li></ul>
+          <p class="project__role" data-i18n="projectRole">My contribution: implementing a Figma design, guided by video tutorials.</p>
           <div class="project__links">
-            <a class="text-link" href="demos/area/index.html" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Открыть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
+            <a class="text-link" href="demos/area/index.html" target="_blank" rel="noopener noreferrer"><span data-i18n="openSite">Visit website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
           </div>
         </div>
       </article>
       <article class="project project--future" aria-labelledby="attention-title">
-        <a class="project-preview project-preview--attention" href="demos/attention/index.html" aria-label="Открыть сайт Attention" data-i18n-aria="attentionPreview"><img class="project-preview__image" src="assets/attention-site-preview.jpg" width="1375" height="739" loading="lazy" decoding="async" alt="Главная страница сайта Attention" data-i18n-alt="attentionSiteAlt"><span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
-        <div class="project__info"><div class="project__eyebrow"><span>03 / 05</span><span data-i18n="appLabel">Приложение</span></div><h3 id="attention-title">Attention</h3><p class="project__description" data-i18n="attentionDescription">Сайт приложения для концентрации: скачивание для Android и веб-планировщик с локальным сохранением.</p><ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>Flutter</li><li>Kotlin</li><li>Android</li></ul><div class="project__links"><a class="text-link" href="demos/attention/index.html"><span data-i18n="attentionOpen">Открыть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
+        <a class="project-preview project-preview--attention" href="demos/attention/index.html" aria-label="Open the Attention website" data-i18n-aria="attentionPreview"><img class="project-preview__image" src="assets/attention-site-preview.jpg" width="1375" height="739" loading="lazy" decoding="async" alt="Attention website homepage" data-i18n-alt="attentionSiteAlt"><span class="preview-hint"><span data-i18n="previewHint">Explore website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
+        <div class="project__info"><div class="project__eyebrow"><span>03 / 05</span><span data-i18n="appLabel">App</span></div><h3 id="attention-title">Attention</h3><p class="project__description" data-i18n="attentionDescription">A focus app website with an Android download and a browser-based planner with local storage.</p><ul class="tech-list" aria-label="Technologies" data-i18n-aria="technologies"><li>Flutter</li><li>Kotlin</li><li>Android</li></ul><div class="project__links"><a class="text-link" href="demos/attention/index.html"><span data-i18n="attentionOpen">Open website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
       </article>
       <article class="project project--area" aria-labelledby="coffee-title">
-        <a class="project-preview project-preview--coffee" href="demos/coffee/index.html" aria-label="Открыть демо кофейни «Пауза»" data-i18n-aria="coffeePreview"><img class="project-preview__image" src="assets/pausa-preview.jpg" width="1375" height="739" loading="lazy" decoding="async" alt="Главный экран кофейни «Пауза»" data-i18n-alt="coffeeAlt"><span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
-        <div class="project__info"><div class="project__eyebrow"><span>04 / 05</span><span data-i18n="concept">Демо-концепт</span></div><h3 id="coffee-title">Пауза / Pausa</h3><p class="project__description" data-i18n="coffeeDescription">Сайт городской кофейни: меню напитков и выпечки, история и информация для посетителей.</p><ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project__links"><a class="text-link" href="demos/coffee/index.html"><span data-i18n="openDemo">Открыть демо</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
+        <a class="project-preview project-preview--coffee" href="demos/coffee/index.html" aria-label="Open the Pausa coffee demo" data-i18n-aria="coffeePreview"><img class="project-preview__image" src="assets/pausa-preview.jpg" width="1375" height="739" loading="lazy" decoding="async" alt="Pausa coffee bar homepage" data-i18n-alt="coffeeAlt"><span class="preview-hint"><span data-i18n="previewHint">Explore website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
+        <div class="project__info"><div class="project__eyebrow"><span>04 / 05</span><span data-i18n="concept">Demo concept</span></div><h3 id="coffee-title">Пауза / Pausa</h3><p class="project__description" data-i18n="coffeeDescription">A city coffee bar concept with a menu, a story and visitor information.</p><ul class="tech-list" aria-label="Technologies" data-i18n-aria="technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project__links"><a class="text-link" href="demos/coffee/index.html"><span data-i18n="openDemo">Open demo</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
       </article>
       <article class="project project--future" aria-labelledby="hydra-title">
-        <a class="project-preview project-preview--hydra" href="demos/hydra/index.html" aria-label="Открыть сайт HYDRA" data-i18n-aria="hydraPreview"><img class="project-preview__image" src="demos/hydra/assets/images/logo.png" width="1024" height="1024" loading="lazy" decoding="async" alt="Логотип HYDRA" data-i18n-alt="hydraAlt"><span class="preview-hint"><span data-i18n="previewHint">Посмотреть сайт</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
-        <div class="project__info"><div class="project__eyebrow"><span>05 / 05</span><span data-i18n="concept">Демо-концепт</span></div><h3 id="hydra-title">HYDRA</h3><p class="project__description" data-i18n="hydraDescription">Сайт с каталогом материалов для GTA 5 RP: карточки, галерея и страницы проекта.</p><ul class="tech-list" aria-label="Технологии" data-i18n-aria="technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project__links"><a class="text-link" href="demos/hydra/index.html"><span data-i18n="openDemo">Открыть демо</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
+        <a class="project-preview project-preview--hydra" href="demos/hydra/index.html" aria-label="Open the HYDRA website" data-i18n-aria="hydraPreview"><img class="project-preview__image" src="demos/hydra/assets/images/logo.png" width="1024" height="1024" loading="lazy" decoding="async" alt="HYDRA logo" data-i18n-alt="hydraAlt"><span class="preview-hint"><span data-i18n="previewHint">Explore website</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></span></a>
+        <div class="project__info"><div class="project__eyebrow"><span>05 / 05</span><span data-i18n="concept">Demo concept</span></div><h3 id="hydra-title">HYDRA</h3><p class="project__description" data-i18n="hydraDescription">A GTA 5 RP materials website with a catalog, gallery and project pages.</p><ul class="tech-list" aria-label="Technologies" data-i18n-aria="technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project__links"><a class="text-link" href="demos/hydra/index.html"><span data-i18n="openDemo">Open demo</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div></div>
       </article>
-      <div class="work__footnote reveal"><span data-i18n="workFootnote">От первого макета к собственному подходу.</span><a class="text-link" href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepos">Все репозитории</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
+      <div class="work__footnote reveal"><span data-i18n="workFootnote">From following designs to finding my own approach.</span><a class="text-link" href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepos">All repositories</span><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></div>
     </section>
 
     <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about__photo"><img src="assets/forest.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Тёмный хвойный лес, уходящий в горный туман" data-i18n-alt="forestAlt"></div>
+      <div class="about__photo"><img src="assets/forest.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Dark evergreen forest disappearing into mountain mist" data-i18n-alt="forestAlt"></div>
       <div class="about__content reveal">
-        <h2 id="about-title" data-i18n-html="aboutTitle">За интерфейсом<br><em>стоит человек.</em></h2>
-        <p class="about__lead" data-i18n="aboutLead">Я — sp1ne. Занимаюсь разработкой, изучаю новые технологии и превращаю идеи в собственные проекты.</p>
-        <p data-i18n="aboutBody">Начинал с frontend: HTML, CSS, JavaScript и Vue.js. Затем стал изучать backend, чтобы понимать приложения не только со стороны интерфейса, но и изнутри.</p>
-        <p data-i18n="aboutCurrent">Сейчас изучаю Rust и работаю над собственным проектом. Мне нравится пробовать разные подходы, разбираться в инструментах и самостоятельно находить решения.</p>
-        <p data-i18n="aboutFuture">Дальше хочу развиваться в Machine Learning и искусственном интеллекте: получить больше практического опыта и реализовать свои идеи.</p>
-        <p class="about__aside" data-i18n="aboutAside">Продолжаю учиться, экспериментировать и работать над новыми проектами.</p>
+        <h2 id="about-title" data-i18n-html="aboutTitle">A human behind<br><em>every interface.</em></h2>
+        <p class="about__lead" data-i18n="aboutLead">I’m sp1ne. I build software, explore new technologies and turn ideas into projects of my own.</p>
+        <p data-i18n="aboutBody">I started with frontend development: HTML, CSS, JavaScript and Vue.js. Then I began exploring backend development to understand how applications work beyond the interface.</p>
+        <p data-i18n="aboutCurrent">I’m currently learning Rust and working on my own project. I enjoy trying different approaches, exploring new tools and finding solutions independently.</p>
+        <p data-i18n="aboutFuture">Next, I want to explore machine learning and artificial intelligence, gain more hands-on experience and bring my own ideas to life.</p>
+        <p class="about__aside" data-i18n="aboutAside">Always learning, experimenting and working on new projects.</p>
       </div>
       <div class="toolkit">
         <div class="toolkit__heading reveal">
-          <h3 id="toolkit-title" data-i18n="toolkitTitle">Мой стек</h3>
-          <p data-i18n="toolkitIntro">От интерфейса до логики приложения.</p>
+          <h3 id="toolkit-title" data-i18n="toolkitTitle">My toolkit</h3>
+          <p data-i18n="toolkitIntro">From interfaces to application logic.</p>
         </div>
         <div class="toolkit__grid" aria-labelledby="toolkit-title">
           <div class="toolkit__group reveal">
@@ -141,43 +141,43 @@
             <ul class="skill-tags"><li>Node.js</li><li>Express.js</li><li>REST API</li><li>Axios</li><li>Socket.io</li></ul>
           </div>
           <div class="toolkit__group reveal">
-            <h4 data-i18n="skillsTools">Инструменты и среда</h4>
+            <h4 data-i18n="skillsTools">Tools &amp; environment</h4>
             <ul class="skill-tags"><li>Git</li><li>GitHub</li><li>Linux</li><li>Vite</li><li>npm</li><li>VS Code</li></ul>
           </div>
         </div>
         <div class="toolkit__path">
-          <div class="toolkit__learning reveal"><h4 data-i18n="skillsLearning">Сейчас изучаю</h4><span class="toolkit__rust">Rust</span></div>
-          <div class="toolkit__next reveal"><h4 data-i18n="skillsFuture">Дальше — больше</h4><p data-i18n="skillsInterests">Машинное обучение / Искусственный интеллект</p></div>
+          <div class="toolkit__learning reveal"><h4 data-i18n="skillsLearning">Currently learning</h4><span class="toolkit__rust">Rust</span></div>
+          <div class="toolkit__next reveal"><h4 data-i18n="skillsFuture">What’s next</h4><p data-i18n="skillsInterests">Machine Learning / Artificial Intelligence</p></div>
         </div>
       </div>
     </section>
 
     <section class="approach section-space" aria-labelledby="approach-title">
       <div class="section-heading reveal">
-        <h2 id="approach-title" data-i18n="approachTitle">От идеи до сайта</h2>
-        <p data-i18n-html="approachIntro">Сначала — задача и первая версия.<br>Затем — проверка и точные детали.</p>
+        <h2 id="approach-title" data-i18n="approachTitle">How I work</h2>
+        <p data-i18n-html="approachIntro">A clear idea and a working draft.<br>A thoughtful review of the details.</p>
       </div>
       <ol class="process">
-        <li class="process__row reveal"><span class="process__number" aria-hidden="true">01</span><h3 data-i18n="stepOneTitle">Понять задачу</h3><p data-i18n-html="stepOneBody">Разберём вашу идею и задачу.<br>Поймём, кто придёт на сайт.<br>Решим, что важно показать.</p></li>
-        <li class="process__row reveal"><span class="process__number" aria-hidden="true">02</span><h3 data-i18n="stepTwoTitle">Собрать основу</h3><p data-i18n-html="stepTwoBody">Наметим структуру и стиль.<br>Соберу первую версию с AI.<br>Обсудим, что стоит улучшить.</p></li>
-        <li class="process__row reveal"><span class="process__number" aria-hidden="true">03</span><h3 data-i18n="stepThreeTitle">Довести детали</h3><p data-i18n-html="stepThreeBody">Проверим сайт на телефоне.<br>Проверим на большом экране.<br>Доведём оставшиеся детали.</p></li>
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">01</span><h3 data-i18n="stepOneTitle">Understand the idea</h3><p data-i18n-html="stepOneBody">We’ll talk through your idea.<br>Find the audience and purpose.<br>Decide what the site should do.</p></li>
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">02</span><h3 data-i18n="stepTwoTitle">Build the foundation</h3><p data-i18n-html="stepTwoBody">We’ll shape the look and layout.<br>I’ll build a first version with AI.<br>Then we’ll review it together.</p></li>
+        <li class="process__row reveal"><span class="process__number" aria-hidden="true">03</span><h3 data-i18n="stepThreeTitle">Refine the details</h3><p data-i18n-html="stepThreeBody">We’ll check the mobile layout.<br>Review it on a larger screen.<br>And refine the final details.</p></li>
       </ol>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact__heading reveal"><h2 id="contact-title" data-i18n-html="contactTitle">Обсудим идею.<br><em>Соберём сайт.</em></h2></div>
+      <div class="contact__heading reveal"><h2 id="contact-title" data-i18n-html="contactTitle">Let’s talk ideas.<br><em>And build a site.</em></h2></div>
       <div class="contact__body reveal">
-        <p data-i18n="contactBody">Расскажите, что хотите сделать. Можно начать с пары предложений или ссылки на понравившийся сайт.</p>
-        <a class="button button--dark" href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="contactCta">Обсудить в Telegram</span><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a>
-        <span class="reassurance" data-i18n="contactNote">Начнём с обсуждения вашей идеи</span>
+        <p data-i18n="contactBody">Tell me what you have in mind. A few sentences or a link to a website you like is a good place to start.</p>
+        <a class="button button--dark" href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer"><span data-i18n="contactCta">Let’s talk on Telegram</span><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a>
+        <span class="reassurance" data-i18n="contactNote">Start with a simple conversation</span>
         <a class="contact__email text-link" href="mailto:aleksejdrachuk10@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg><span>aleksejdrachuk10@gmail.com</span></a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__top"><a class="brand" href="#top" aria-label="sp1ne — наверх" data-i18n-aria="backToTop"><span class="brand__inner"><svg class="brand__mark" aria-hidden="true"><use href="#mark-spine"/></svg><span>sp1ne</span></span></a><span class="footer__line" data-i18n="footerLine">Frontend. AI. Внимание к деталям.</span><div class="socials"><a href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a><a href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a href="mailto:aleksejdrachuk10@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></a></div></div>
-    <div class="footer__bottom"><span>© <span id="year">2026</span> sp1ne</span><a class="text-link" href="#top"><span data-i18n="toTop">К началу</span><svg class="icon icon--up" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+    <div class="footer__top"><a class="brand" href="#top" aria-label="sp1ne — back to top" data-i18n-aria="backToTop"><span class="brand__inner"><svg class="brand__mark" aria-hidden="true"><use href="#mark-spine"/></svg><span>sp1ne</span></span></a><span class="footer__line" data-i18n="footerLine">Frontend. AI. Thoughtful details.</span><div class="socials"><a href="https://t.me/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a><a href="https://github.com/sp1ne8" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a href="mailto:aleksejdrachuk10@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></a></div></div>
+    <div class="footer__bottom"><span>© <span id="year">2026</span> sp1ne</span><a class="text-link" href="#top"><span data-i18n="toTop">Back to top</span><svg class="icon icon--up" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
   </footer>
 </body>
 </html>

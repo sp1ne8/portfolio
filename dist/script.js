@@ -26,7 +26,8 @@ const translations = {
 };
 
 const menuButton = document.querySelector('.menu-toggle');
-let currentLanguage = 'ru';
+const defaultLanguage = 'en';
+let currentLanguage = defaultLanguage;
 
 function keepShortWordsTogether(text, language) {
   const words = language === 'ru' ? 'в|на|с|к|у|о|и|а|но|из|за|по|до|от' : 'a|an|the|of|in|on|to|and|or';
@@ -61,7 +62,7 @@ function setLanguage(language, updateUrl = true) {
   try { localStorage.setItem('sp1ne-language', language); } catch { /* Storage may be unavailable in private browsing. */ }
   if (updateUrl) {
     const url = new URL(window.location.href);
-    if (language === 'en') url.searchParams.set('lang', 'en');
+    if (language !== defaultLanguage) url.searchParams.set('lang', language);
     else url.searchParams.delete('lang');
     history.replaceState(null, '', url);
   }
@@ -70,7 +71,7 @@ function setLanguage(language, updateUrl = true) {
 let savedLanguage;
 try { savedLanguage = localStorage.getItem('sp1ne-language'); } catch { /* Use the default. */ }
 const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
-setLanguage(translations[requestedLanguage] ? requestedLanguage : (translations[savedLanguage] ? savedLanguage : 'ru'), false);
+setLanguage(translations[requestedLanguage] ? requestedLanguage : (translations[savedLanguage] ? savedLanguage : defaultLanguage), false);
 document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
 menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
 document.querySelectorAll('.nav a').forEach(link => link.addEventListener('click', () => setMenu(false)));
