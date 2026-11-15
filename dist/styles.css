@@ -63,3 +63,26 @@
 @media(max-width:360px){.hero__title{font-size:34px}.contact h2{font-size:36px}}
 
 .project-preview--hydra{background:#080a09;aspect-ratio:1425/891;height:auto;display:flex;align-items:center;justify-content:center}.project-preview--hydra .project-preview__image{width:55%;height:65%;object-fit:contain}
+
+/* About: a personal story followed by an open, editorial technology index. */
+.about__content>p{text-wrap:pretty;max-width:48ch}
+.about__content>p+p{margin-top:20px}
+.about__content .about__lead{margin-bottom:0}
+.about__content .about__aside{margin-top:28px;font-size:13px;color:var(--accent);opacity:1}
+.toolkit{grid-column:1/-1;padding:64px var(--gutter) 72px;min-width:0}
+.toolkit__heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:40px}
+.toolkit__heading h3{font-family:var(--display);font-size:clamp(32px,3.5vw,48px);line-height:.95;letter-spacing:-.035em}
+.toolkit__heading p{font-size:14px;opacity:.72}
+.toolkit__grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px}
+.toolkit h4{font-size:15px;font-weight:400;line-height:1.5;letter-spacing:0;text-wrap:balance;margin:0 0 20px}
+.toolkit__group{padding-top:24px;border-top:1px solid rgb(245 245 247 / .16);min-width:0}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px}
+.skill-tags li{padding:6px 12px;border-radius:var(--radius);background:rgb(245 245 247 / .06);font-size:12px;line-height:1.6;color:rgb(245 245 247 / .8)}
+.toolkit__path{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px;padding-top:32px;border-top:1px solid rgb(245 245 247 / .16)}
+.toolkit__path h4{font-size:12px;opacity:.6;margin-bottom:12px}
+.toolkit__rust{font-family:var(--display);font-size:44px;line-height:1;letter-spacing:-.035em;color:var(--accent)}
+.toolkit__next p{font-size:clamp(16px,1.65vw,23px);line-height:1.5;max-width:32ch;text-wrap:balance}
+@media(min-width:801px) and (prefers-reduced-motion:no-preference){.toolkit__group:nth-child(2){transition-delay:50ms}.toolkit__group:nth-child(3),.toolkit__next{transition-delay:100ms}}
+@media(max-width:1100px){.toolkit__grid{gap:24px}.about__photo{min-height:0}}
+@media(max-width:800px){.about{grid-template-columns:1fr}.about__photo{height:360px}.about__photo img{object-position:center 40%}.about__content{width:100%;padding:56px var(--gutter)}.about__content>p{max-width:62ch}.about h2{font-size:clamp(38px,6vw,48px)}.toolkit{padding-top:8px}.toolkit__grid{grid-template-columns:1fr}.toolkit__heading{align-items:flex-start;flex-direction:column;gap:16px;margin-bottom:32px}.toolkit__path{gap:24px}}
+@media(max-width:600px){.toolkit{padding-bottom:56px}.toolkit__path{grid-template-columns:1fr;gap:32px;margin-top:32px}.toolkit__next p{max-width:28ch}.about__content .about__aside{font-size:13px}.toolkit__heading p{font-size:14px}}
