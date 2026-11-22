@@ -140,14 +140,6 @@
 .free-download > button {
   flex-shrink: 0;
 }
-.showcase-card > img,
-.showcase-card > video {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: var(--color-bg);
-}
 .notice-dialog {
   width: min(460px, calc(100% - 32px));
   margin: auto;
