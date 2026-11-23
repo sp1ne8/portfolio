@@ -284,6 +284,9 @@ input,textarea,select{background:var(--input-bg);color:var(--fg);border-color:va
   user-select: all;
 }
 .support-copy-status { display: block; font-size: .875rem; }
+.support-contacts { margin-top: 16px; }
+.support-contacts h3 { margin: 0 0 4px; font-size: .875rem; }
+.support-contacts a { overflow-wrap: anywhere; }
 
 @media (max-width: 850px) {
   .explore {

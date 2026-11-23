@@ -1,4 +1,4 @@
-import { androidRelease } from './release.js?v=1.7.1';
+import { androidRelease } from './release.js?v=1.7.2';
 import { supportLinks } from './support.js';
 
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
